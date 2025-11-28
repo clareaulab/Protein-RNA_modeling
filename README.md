@@ -12,7 +12,7 @@ slurm script
 
 
 
-📘 Script Description (for GitHub / Methods Section)
+📘 _compare_summaries_IE.py_ Script Description (for GitHub / Methods Section)
 compare_summaries_IE.py is a lightweight analysis tool for comparing Interaction Energy (IntE) across multiple Rosetta or design-pipeline output folders. It processes multiple subdirectories—each containing a summary.csv file—and extracts the top 40 models ranked by Score for each group. From these filtered models, the script:
 1. Extracts Interaction Energies
 Reads the top-N (default: 40) models per group, sorted by the Score column.

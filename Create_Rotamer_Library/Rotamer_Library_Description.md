@@ -93,6 +93,6 @@ In the script, the flag:
 
 specifies that the parental rotamer library of arginine (ARG) should be used as a template for generating rotamers of this ncAA. This is useful when the new residue is chemically similar to a canonical amino acid and you want to inherit its backbone/side-chain sampling behavior.
 
-
+Output of this script will be MGH.params files which can be used in rosetta scripts as a new amino acid.
 
 

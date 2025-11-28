@@ -1,4 +1,4 @@
-# Protein-RNA_modeling
+# Protein-RNA modeling
 
 README
 

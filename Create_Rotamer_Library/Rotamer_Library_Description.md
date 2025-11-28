@@ -25,7 +25,7 @@ For the example residue MGH, the block looks like:
 
 
 <RosettaParamsInstructions>
-M  ROOT 17
+M  ROOT 17 \
 M  POLY_N_BB 17
 M  POLY_CA_BB 5
 M  POLY_C_BB 3

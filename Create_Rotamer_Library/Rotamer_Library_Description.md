@@ -2,7 +2,7 @@
 Creating a Non-Canonical Amino Acid (ncAA) and Rotamer Library in Rosetta
 This section outlines the first step in generating a non-canonical amino acid (ncAA) for use in Rosetta: preparing the chemical structure and producing a .sdf / .sif file that Rosetta can convert into parameters and a rotamer library.
 Rosetta supports multiple approaches for incorporating ncAAs (e.g., treating them as small molecules, deriving rotamers from existing libraries, or generating rotamers via CHARMM).
-Here we follow the workflow recommended in Rosetta Commons demos.
+Here we follow the workflow recommended in Rosetta Commons demos and tutorials from Jens Meiler lab https://meilerlab.org/tutorials/.
 1. Draw the ncAA and Generate an .sdf File
 Start by creating a 3D structure of your new amino acid:
 Open a molecular sketching tool such as the RCSB ChemSketch Tool:

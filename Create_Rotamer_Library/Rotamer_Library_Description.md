@@ -36,6 +36,8 @@ M  POLY_LOWER 18
 M  POLY_CHG 0
 M  POLY_PROPERTIES PROTEIN POLYMER ALPHA_AA AROMATIC L_AA CYCLIC
 M  END
+
+  
 <img width="382" height="184" alt="image" src="https://github.com/user-attachments/assets/7ad4c564-bbaf-4d6d-ad9f-4948f4f64b88" />
 
 

@@ -59,3 +59,11 @@ M END	Ends the instruction block.
 
 
 
+
+M  ROOT 17
+
+M  POLY_N_BB 17
+
+M  POLY_CA_BB 5
+
+M  POLY_C_BB 3

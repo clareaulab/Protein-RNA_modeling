@@ -79,3 +79,7 @@ M END	Ends the instruction block.
 
 
 
+At this point, you now have a valid .sif file with Rosetta-compatible metadata, ready for parameter generation and rotamer library creation.
+
+
+

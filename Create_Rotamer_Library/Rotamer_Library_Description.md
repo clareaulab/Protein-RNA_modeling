@@ -82,4 +82,17 @@ M END	Ends the instruction block.
 At this point, you now have a valid .sif file with Rosetta-compatible metadata, ready for parameter generation and rotamer library creation.
 
 
+Once the .sif file has been prepared with the Rosetta instructions, you can generate the ncAA rotamer library using the provided script:
+Create_Rotamer_Library/MGH1_generate_rot_library.sh
+This script calls Rosetta’s molfile_to_params_polymer.py (installed as part of Rosetta), which converts the .sdf/.sif description of the residue into:
+a Rosetta .params file, and
+a corresponding rotamer library for side-chain sampling.
+In the script, the flag:
+
+--use-parent-rotamers ARG
+
+specifies that the parental rotamer library of arginine (ARG) should be used as a template for generating rotamers of this ncAA. This is useful when the new residue is chemically similar to a canonical amino acid and you want to inherit its backbone/side-chain sampling behavior.
+
+
+
 

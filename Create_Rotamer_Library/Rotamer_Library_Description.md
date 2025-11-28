@@ -37,8 +37,25 @@ M  POLY_CHG 0
 M  POLY_PROPERTIES PROTEIN POLYMER ALPHA_AA AROMATIC L_AA CYCLIC
 M  END
 
-  
-<img width="382" height="184" alt="image" src="https://github.com/user-attachments/assets/7ad4c564-bbaf-4d6d-ad9f-4948f4f64b88" />
+
+Instruction	Meaning
+M ROOT <atom>	Atom index that Rosetta treats as the “root” of the residue tree. Usually the backbone N atom.
+M POLY_N_BB <atom>	Atom index corresponding to the peptide-bond N atom.
+M POLY_CA_BB <atom>	Atom index for the α-carbon (CA).
+M POLY_C_BB <atom>	Atom index for the backbone C atom.
+M POLY_O_BB <atom>	Atom index for the backbone carbonyl oxygen.
+M POLY_IGNORE <atom indices>	Atoms to ignore during polymerization (usually ACE/NME cap atoms).
+M POLY_UPPER <atom>	Atom used for forming the upstream polymer connection (C-terminus).
+M POLY_LOWER <atom>	Atom used for forming the downstream polymer connection (N-terminus).
+M POLY_CHG <charge>	Net formal charge of the residue.
+M POLY_PROPERTIES …	Defines the residue class and categories:
+- PROTEIN: residue behaves like a protein residue
+- POLYMER: connectable in a chain
+- ALPHA_AA: alpha-amino acid topology
+- AROMATIC: contains aromatic ring(s)
+- L_AA: L-chirality
+- CYCLIC: cyclic residue
+M END	Ends the instruction block.
 
 
 

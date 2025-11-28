@@ -21,7 +21,7 @@ https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html
 Download the resulting .sif file.
 3. Add Rosetta Instructions to the .sif File
 At the end of your .sif file, append a <RosettaParamsInstructions> block.
-For the example residue MGH, the block looks like:
+For the example residue MGH (see Input_Files/MGH.sif), the block looks like:
 
 
 <RosettaParamsInstructions>

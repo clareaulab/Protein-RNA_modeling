@@ -8,7 +8,9 @@ These tools and workflows were developed as part of the manuscript:
 Non-Enzymatic MGO-Glycation of SRSF2 Drives RNA Mis-Splicing in Cancer
 Xiao et al. (2025)
 The repository is organized into two major components:
-🧬 1. Non-Canonical Amino Acid (ncAA) Generation
+
+1. Non-Canonical Amino Acid (ncAA) Generation
+
 Directory: Protein-RNA_modeling/Create_Rotamer_Library/
 This section shows how to:
 build chemically accurate models of ncAAs,
@@ -16,7 +18,9 @@ prepare .sdf/.sif inputs for Rosetta,
 generate .params files and rotamer libraries,
 and integrate the new residues into Rosetta’s polymer machinery.
 These steps enable incorporation of MGO-modified amino acids (e.g., MGH) or any other custom residue into Rosetta simulations.
-🔬 2. RNA–Protein Binding Simulations Using rnp-ddg
+
+ 2. RNA–Protein Binding Simulations Using rnp-ddg
+
 Directory: Protein-RNA_modeling/Replicate_Simulation/
 This portion of the workflow includes:
 mutating bases in RNA or residues in the protein using Rosetta tools,

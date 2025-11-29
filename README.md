@@ -13,10 +13,10 @@ The repository is organized into two major components:
 
 Directory: Protein-RNA_modeling/Create_Rotamer_Library/
 This section shows how to:
-build chemically accurate models of ncAAs,
+build models of ncAAs,
 prepare .sdf/.sif inputs for Rosetta,
 generate .params files and rotamer libraries,
-and integrate the new residues into Rosetta’s polymer machinery.
+and integrate the new residues into Rosetta.
 These steps enable incorporation of MGO-modified amino acids (e.g., MGH) or any other custom residue into Rosetta simulations.
 
  2. RNA–Protein Binding Simulations Using rnp-ddg

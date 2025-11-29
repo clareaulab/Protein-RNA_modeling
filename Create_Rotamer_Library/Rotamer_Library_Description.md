@@ -1,6 +1,6 @@
 
 Creating a Non-Canonical Amino Acid (ncAA) and Rotamer Library in Rosetta
-This section outlines the first step in generating a non-canonical amino acid (ncAA) for use in Rosetta: preparing the chemical structure and producing a .sdf / .sif file that Rosetta can convert into parameters and a rotamer library.
+This section outlines the first step in generating a non-canonical amino acid (ncAA) for use in Rosetta: preparing the chemical structure and producing a .sif file that Rosetta can convert into parameters and a rotamer library.
 Rosetta supports multiple approaches for incorporating ncAAs (e.g., treating them as small molecules, deriving rotamers from existing libraries, or generating rotamers via CHARMM).
 Here we follow the workflow recommended in Rosetta Commons demos and tutorials from Jens Meiler lab https://meilerlab.org/tutorials/.
 1. Draw the ncAA and Generate an .sdf File
@@ -12,10 +12,10 @@ N-terminal: N-acetyl cap (ACE)
 C-terminal: N-methylamide (NME)
 Ensure the residue is drawn as the backbone fragment of a peptide, with ACE–Residue–NME connectivity. This is required for Rosetta’s polymer machinery.
 (See Rosetta’s ncAA design tutorial: https://docs.rosettacommons.org/demos/latest/public/design_with_ncaa/README)
-Export the structure as an .sdf file.
+
 2. Convert to .sif Format
 Rosetta’s residue parameter generator uses .sif files (SMILES Input Format).
-You can convert .sdf → .sif using:
+You can convert SMILES → .sif using:
 Online OpenBabel converter:
 https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html
 Download the resulting .sif file.

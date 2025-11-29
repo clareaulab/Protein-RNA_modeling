@@ -57,3 +57,43 @@ bash run_ALL_RELAX_COMMANDS.sh
 
 This will carry out the relaxation and scoring for the wild-type and all MGH mutants, producing the Rosetta score files used for downstream analysis.
 
+
+After generating relaxed structures and scoring the wild-type and all MGH mutants, the next step is to aggregate all results and perform statistical comparisons of interaction energies across variants.
+
+Combine All Scores Across WT and Mutants
+
+To merge the results from every run—including wild-type (WT) and all MGH mutants—use:
+
+Replicate_Simulation/score_rnp.sh
+
+This script collects and organizes Rosetta scoring outputs (interaction energies, ddG, etc.).
+
+It internally calls:
+
+Replicate_Simulation/get_lowest_scoring_ddgBind_relaxed_models.py
+
+Important:
+
+The Python script get_lowest_scoring_ddgBind_relaxed_models.py must be placed in:
+
+$ROSETTA/source/src/apps/public/rnp_ddg/
+
+to allow Rosetta to locate and execute it correctly.
+
+Once all results are combined, we perform the main comparative analysis using:
+
+compare_summaries_IE.sh
+This wrapper script calls:
+
+compare_summaries_IE.py
+
+compare_summaries_IE.py:
+
+-extracts interaction energies (IntE)
+-selects the top 40 models for each variant (sorted by Rosetta Score)
+-computes mean ± SD per variant
+-performs a Kruskal–Wallis test across all groups
+-performs Dunn’s post-hoc pairwise comparisons (Bonferroni-adjusted)
+-reports statistical differences between WT and each mutant
+
+

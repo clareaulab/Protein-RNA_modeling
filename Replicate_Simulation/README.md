@@ -87,9 +87,7 @@ This wrapper script calls:
 
 compare_summaries_IE.py
 
-compare_summaries_IE.py:
-
--extracts interaction energies (IntE)
+compare_summaries_IE.py:-extracts interaction energies (IntE)
 -selects the top 40 models for each variant (sorted by Rosetta Score)
 -computes mean ± SD per variant
 -performs a Kruskal–Wallis test across all groups

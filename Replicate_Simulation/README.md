@@ -55,5 +55,5 @@ You can then launch all relax/score jobs by executing:
 
 bash run_ALL_RELAX_COMMANDS.sh
 
-This will carry out the relaxation and scoring for the wild-type and all MGH mutants, producing the Rosetta score files used for downstream analysis (e.g., ΔΔG or interaction energy comparisons).
+This will carry out the relaxation and scoring for the wild-type and all MGH mutants, producing the Rosetta score files used for downstream analysis.
 

@@ -104,7 +104,6 @@ Pulls the IntE (Interaction Energy) column for those models.
 Outputs raw IntE values (if --raw_intE is provided).
 2. Computes Summary Statistics
 Calculates the mean and standard deviation of IntE for each group.
-Generates a publication-ready bar plot showing mean ± SD across groups.
 3. Performs Non-Parametric Statistical Testing (Optional)
 If --stats_vs_relax is specified:
 Runs a global Kruskal–Wallis test across all groups to assess overall differences.

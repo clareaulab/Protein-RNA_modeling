@@ -31,5 +31,8 @@ and performing statistical analysis of interaction energies.
 Together, these simulations support the computational analysis performed in the associated manuscript, enabling reproduction of all modeling steps involved in studying glycation-induced changes in SRSF2–RNA binding.
 
 
-
+⚠️ Note:
+The workflows in this repository require a working installation of the Rosetta macromolecular modeling suite.
+Rosetta is available for academic use at:
+https://www.rosettacommons.org/software
 
